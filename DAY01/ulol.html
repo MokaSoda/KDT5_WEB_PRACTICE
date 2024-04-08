@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+    좋아하는 계절 (순서가 없음)
+    - 봄
+    - 여름
+    - 가을
+    - 겨울
+
+    요리 방법 (순서가 있음)
+    --------------------------------
+    1. 재료 준비
+    2. 재료 손질
+    3. 요리
+    4. 완료
+ -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta viewport="width=device-width, initial-scale=1.0">
+        <title>Unordered, Ordered List</title>
+        <style>
+            .subtitle {
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+            #sstitle {
+                color: green;
+            }
+            #cooktitle {
+                color: blue;
+            }
+            hr {
+                color: greenyellow;
+                /* color of hr line  */
+                border: 4px solid greenyellow;
+            }
+            ul,ol {
+                font-size: 18px;
+            }
+            a {
+                text-decoration: none;
+                color: rebeccapurple;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>목차</h2>
+        <ul>
+            <li><a href="#sstitle">좋아하는 계절</a></li>
+            <li><a href="#cooktitle">요리 방법</a></li>
+        </ul>
+
+        <p class="subtitle" id='sstitle'>좋아하는 계절</p>
+        <hr>
+        <ul>
+            <li>봄</li>
+            <li>여름</li>
+            <li>가을</li>
+            <li>겨울</li>
+        </ul>
+        <p class="subtitle" id="cooktitle">요리 방법</p>
+        <hr>
+        <ol>
+            <li>재료 준비</li>
+            <li>재료 손질</li>
+            <li>요리</li>
+            <li>완료</li>
+        </ol>
+    </body>
+</html>
