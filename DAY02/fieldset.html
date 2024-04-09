@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            fieldset {
+                border: 1px solid black;
+                padding: 10px;
+                margin: 10px;
+                width: 300px;
+            }
+            legend {
+                font-weight: bold;
+            }
+
+            #submitarea {
+                position: relative;
+                text-align: center;
+            }
+
+            label {
+                padding: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+        <form method="get" action="result.html">
+            <fieldset>
+                <legend>자기 소개</legend>
+                <label for="username">이름</label>
+                <input type="text" id="username" name="username" value='KMS' required />
+                <br>
+                <label for="age">나이</label>
+                <input type="number" id="age" name="age" value='25' required />
+                <br>
+                <label for="gender">성별</label>
+                <select id="gender" name="gender">
+                    <option value="male" selected>남자</option>
+                    <option value="female">여자</option>
+                </select>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>상세 내용</legend>
+                <label for="detail" id="detailname">자기 소개 상세</label>
+                <br>
+                <textarea id="detail" name="detail" rows="5" cols="30" required></textarea>
+                <br>
+                <label for="location" id="locationname">위치</label>
+                <select id='location' name="location">
+                    <optgroup label="광역시급">
+                        <option value="seoul">서울</option>
+                        <option value="busan">부산</option>
+                        <option value="daegu" selected>대구</option>
+                        <option value="incheon">인천</option>
+                        <option value="gwangju">광주</option>
+                        <option value="daejeon">대전</option>
+                        <option value="ulsan">울산</option>
+                        <option value="sejong">세종</option>
+                    </optgroup>
+                    <optgroup label="도별">
+                        <option value="gyeonggi">경기</option>
+                        <option value="gangwon">강원</option>
+                        <option value="chungbuk">충북</option>
+                        <option value="chungnam">충남</option>
+                        <option value="jeonbuk">전북</option>
+                        <option value="jeonnam">전남</option>
+                        <option value="gyeongbuk">경북</option>
+                        <option value="gyeongnam">경남</option>
+                        <option value="jeju">제주</option>
+                    </optgroup>
+                </select>
+                <br>
+                <label for="domain" id="domainame">분야</label>
+                <select id="domain" name="domain">
+                    <option value="IT">IT</option>
+                    <option value="design">디자인</option>
+                    <option value="business">비즈니스</option>
+                    <option value="health">건강</option>
+
+                </select>
+            </fieldset>
+            <div id="submitarea">
+                <input type="submit" value="제출" />
+                <input type="reset" value="초기화" />
+            </div>
+            </fieldset>
+        </form>
+    </div>
+    </body>
+</html>

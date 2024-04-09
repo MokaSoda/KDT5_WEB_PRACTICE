@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            /* 전체 요소 아스타리크 (*) */
+            * {
+                background-color: aquamarine;
+            }
+            /* 태그에 색상 적용 */
+            p {
+                
+                font-size: x-large;
+                border: 5px solid aquamarine;
+                margin: 10px;
+                padding: 10px;
+            }
+            
+            /* #은 아이디 선택자 */
+            p#second {
+                background-color: red;
+            }
+
+            /* .은 클래스 선택자 */
+            p#third {
+                background-color: blueviolet;
+            }
+
+            p#second {
+                background-color: greenyellow;
+            }
+
+            /* 클래스 속성 값이 동일한 부분에 적용 */
+            .para {
+                background-color: antiquewhite;
+                font-size: x-large;
+                border: 5px solid beige;
+            }
+        </style>
+        <title>CSS 01</title>
+    </head>
+    <body>
+        <p class="para">This is the first paragraph</p>
+        <h1>This is a h1 text!</h1>
+        <h2>This is a h2 text!</h2>
+        <h3>This is a h3 text!</h3>
+        <h4>This is a h4 text!</h4>
+        <p id="second" class="para">This is the first paragraph</p>
+        <p id="third" class="para">This is the first paragraph</p>
+        <p class="para">This is the first paragraph</p>
+        <div class="para">
+
+            <p>This is the first paragraph</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>테이블 만들기</title>
+        <style>
+            hr {
+                border: 4px solid green;
+            }
+
+            table, th, td {
+                /* collapse table */
+                /* make font center */
+                text-align: center;
+                padding: 20px;
+                background-color: wheat;
+                border: 2px solid black;
+                border-collapse: collapse;
+                font-size: medium;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+
+            th {
+                background-color: wheat;
+                color: black;
+                padding: 5px 5px;
+            }
+
+            #tablediv {
+                /* center table */
+                align-content: center;
+            }
+            
+            caption {
+                font-size: large;
+                font-weight: bold;                
+                padding-bottom: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <footer>
+            <h1>테이블 테그 살펴보기</h1>
+            <hr>
+        </footer>
+        <article>
+            <div id="tablediv">
+            <table>
+                <caption>
+                    샘플 표 작성하기
+                </caption>
+                <tr>
+                    <th id="name">이름</th>
+                    <th>나이</th>
+                    <th>성별</th>
+                </tr>
+                <tr>
+                    <td id="name">홍길동</td>
+                    <td>25</td>
+                    <td>남</td>
+                </tr>
+                <tr>
+                   <td colspan="3">unknown</td> 
+                </tr>
+                <tr>
+                    <td rowspan="2">여러개이름</td>
+                    <td>25</td>
+                    <td>남</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>남</td>
+                </tr>
+            </table>
+            </div>
+        </article>
+    </body>
+</html>

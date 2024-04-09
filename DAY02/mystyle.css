@@ -1,0 +1,23 @@
+/* 태그명 선택자 */
+p {
+    background-color: green;
+    font-size: 40px;
+    border: 5px dotted red;
+}
+
+#second {
+ 
+    background-color: hotpink;
+}
+
+* {
+    color:red;
+}
+
+.para {
+    background-color: cyan;
+}
+
+tr:nth-child(2n + 1) {
+    background-color: yellow;
+}

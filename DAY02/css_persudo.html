@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS pseudo</title>
+        <style>
+            a:link { /* 아직 방문되지 않은 링크의 색상 */
+            text-decoration:none;
+            color: blue;
+            background-color: white;
+            }
+
+            a:visited { /* 방문된 링크의 색상 */
+            text-decoration: none;
+            color: green;
+            }
+
+            a:hover { /* 마우스가 링크위에 있을 때 색상 */
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="http://www.naver.com." target="_blank"> This is a link .</a>
+    </body>
+</html>
