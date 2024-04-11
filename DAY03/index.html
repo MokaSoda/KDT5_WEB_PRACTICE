@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <title>이미지 로딩</title>
+    </head>
+    <body>
+        <h2>이미지 선택하기</h2>
+
+        <form method="post" action="cgi-bin/send.py" id="imgForm" enctype="multipart/form-data">
+            <input type="file" id="imgFile" name="이미지파일">
+            <label for="submitbutton">파일선택</label>
+            <input type="submit" id="submitbutton" name="파일업로드">
+        </form>
+            
+        
+    </body>
+</html>
