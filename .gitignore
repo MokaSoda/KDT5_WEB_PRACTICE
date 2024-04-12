@@ -11,6 +11,7 @@ __pycache__/
 *.so
 *.pth
 *.pt
+*.tar.gz
 DAY02-03/model
 
 # Distribution / packaging

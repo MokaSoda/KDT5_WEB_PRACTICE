@@ -2,6 +2,7 @@
 
 ## 모듈 로딩 후 storage 인스턴스 생성
 import cgi, cgitb, codecs, sys, io
+import datetime
 import torch, torch.nn as nn
 from torchvision import datasets, transforms, models
 from konlpy.tag import Mecab
@@ -138,7 +139,7 @@ def web_response(storage, filename):
     finalresult = '입력된 데이터가 없습니다.'
     file = None
     finalimgresult = '업로드된 사진이 없습니다.'
-    rawname = './image/result.raw'
+    rawname = './image/result_{}.raw'.format(datetime.datetime.now().strftime("%m_%d_%Y_%H_%M_%S"))
     # with open(rawname, 'wb') as f: 
     #     Image.new(mode="RGBA", size=(200, 200), color='white').save(f)
     
